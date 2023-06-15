@@ -7,7 +7,20 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
   <div class="grafico" [style]="grafico">
 
   </div>
+  <ion-list>
+
+    <input type="number" [(ngModel)]="porcentagem1">
+    <input type="number" [(ngModel)]="inputPorcentagem2">
+    <input type="number" [(ngModel)]="inputPorcentagem3">
+    <input type="number" [(ngModel)]="inputPorcentagem4">
+  </ion-list>
+
+  <br>
+
+  <input type="button" value="Porcentagem" (click)="porcento()">
+
 </ion-content>
